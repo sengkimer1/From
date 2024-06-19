@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="card" style=" background-color: #d6effd; border: none;">
+        <div class="image">
+            <img src="../image/images.jpeg" alt="">
+        </div>
+        <div class="box title">
+            <h2>Survey Form WMAD-2024</h2>
+        </div>
+        <div class="box card-text">
+           <p>1.What is your full name?</p> 
+            <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <div class="box card-text">
+            <p>2.What is your email address?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-radio">
+            <p>3.What is your current grade level?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Grade 9
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Grade 10
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Grade 11 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Grade 12 (failed)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Grade 12 (passed)
+                </label>
+              </div>
+         </div>
+         <div class="box card-radio">
+            <p>4.Where is your current learning place?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Public School
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Private School
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Other
+                </label>
+              </div>
+              
+         </div>
+         <div class="box card-radio">
+            <p>5.How interested are you in learning web development?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Very Interested
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Interested
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Neutral
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Not Interested
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Not at all Interested
+                </label>
+              </div>
+         </div>
+         <div class="box card-radio">
+            <p>6.Have you had any previous experience with web development?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                   No
+                </label>
+              </div>
+         </div>
+         <div class="box card-text">
+            <p>7.If yes, please describe your experience (e.g.,self-taught, school projects, online courses, etc.):</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-radio">
+            <p>8.Which aspects of web development interest you the most? (Select all that apply)</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault16">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault17" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                   No
+                </label>
+              </div>
+         </div>
+         <div class="box crad-checkbox">
+            <p>9.Are you familiar with the concept of active pedagogy?</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Front-end Development (HTML, CSS, JavaScript)</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Back-end Development (Server-side programming, databases)</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Full-stack Development</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2"> Mobile Application Development</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2"> Web Design and User Experience (UX)</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Other</label>
+              </div>
+         </div>
+         <div class="box card-radio">
+            <p>10.Are you familiar with the concept of active pedagogy?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault18">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault19" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                   No
+                </label>
+              </div>
+         </div>
+          <div class="box card-text">
+            <p>11.If yes, how would you describe your understanding
+                of active pedagogy?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-radio">
+            <p>12.Have you ever participated in a learning activity that used active pedagogy (e.g., project-based learning, collaborative learning, flipped classroom)?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault20">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault01" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                   No
+                </label>
+              </div>
+         </div>
+         <div class="box card-text">
+            <p>13.If yes, please describe the activity and your 
+                experience:</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box crad-checkbox">
+            <p>14.How do you prefer to learn new skills?(Select all that apply)</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Hands-on projects</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Group work and collaboration</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Online tutorials and courses</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2"> Lectures and presentations</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Self-study</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Other</label>
+              </div>
+         </div>
+         <div class="box card-radio">
+            <p>15.What type of learning environment do you find most effective?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault0">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Classroom setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault03" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Online learning
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault05" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Blended learning (a mix of online and in-person)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault04">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Other
+                </label>
+              </div>
+              
+         </div>
+         <div class="box card-radio">
+            <p>16.How important is peer interaction in your learning process?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault06">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Very Important
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault07" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Important
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault08" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Neutral
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault09">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Not Important
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault010">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Not at all Important
+                </label>
+              </div>
+              
+         </div>
+         <div class="box card-radio">
+            <p>17.How do you feel about receiving feedback and support from instructors during your learning process?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault011">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Very Comfortable
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault012" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Comfortable
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault013" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Neutral
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault014">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Uncomfortable
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault015">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Very Uncomfortable
+                </label>
+              </div>
+              
+         </div>
+         <div class="box crad-checkbox">
+            <p>18.What do you hope to achieve by learning web development? (Select all that apply)</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Gain basic knowledge and skills</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Develop advanced skills for career opportunities</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Build personal projects and portfolios</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox16" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2"> Lectures and presentations</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox17" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Prepare for further education in computer science</label>
+              </div><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox18" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Other</label>
+              </div>
+         </div>
+         <div class="box card-text">
+            <p>19.How do you think web development skills will help you in your future career or studies?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-text">
+            <p>20.Are there any specific topics or technologies you would like to learn in web development training?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-text">
+            <p>21.Do you have any suggestions for how the web development training could be improved to better suit your needs and interests?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+         <div class="box card-text">
+            <p>22.Is there anything else you would like to share about your interest in web development or your learning preferences?</p> 
+             <input type="text" class="form-control bon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
