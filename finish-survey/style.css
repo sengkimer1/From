@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.box1{
+    width: 100%;
+    height: 20px;
+    background-color: #85BFE0;
+}
+.box2{
+    height: 900px;
+    background-color: #D6EFFD;
+    padding: 20px;
+}
+.success{
+    width: 40%;
+    height: 250px;
+    background-color: #FFFFFF;
+    margin: auto;
+    line-height: 3;
+    border:  2px solid rgb(229, 222, 222);
+}
+.title{
+    font-size: 33px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 28%;
+}
+.thank{
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 31%;
+}
+.image{
+    width: 65px;
+    height: 65px;
+    margin-left: 49%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 2;
+}
+.information{
+    font-size: 15px;
+    margin-left: 27%;
+    font-weight: 100;
+}
+.googleform{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 35%;
+}
