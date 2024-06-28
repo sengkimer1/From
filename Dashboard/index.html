@@ -11,16 +11,33 @@
           <h1>DASHBOARD</h1>
           <div class="summary">
             <div class="box">
-              <!-- <h2>Number of responses</h2>
-              <hr />
-              <p class="count">30</p> -->
             </div>
             <div class="box1">
-              <!-- <h2>Students with previous experience in Web Development</h2>
-              <hr />
-              <p class="count">30</p> -->
+            
             </div>
           </div>
+          <div class="allselect">
+            <select class="bon" id="gradeLevel" onchange="fetchAPIG9()">
+              <option value="">What is your current grade level?</option>
+              <option value="grade9">Grade 9</option>
+              <option value="grade10">Grade 10</option>
+              <option value="grade11">Grade 11</option>
+              <option value="grade12(fail)">Grade 12(fail)</option>
+              <option value="grade12(pass)">Grade 12(pass)</option>
+          </select>
+         
+          <p class="btn" id="demo"></p>
+      
+            <select class="bon" id="learningPlace" onchange="fetchAPIS1()">
+                <option value="">Where is your current learning place ?</option>
+                <option value="FSD">FSD</option>
+                <option value="Public School">Public</option>
+                <option value="Private School">Private</option>
+                <option value="Other">Other</option>
+            </select>
+            <p class="btn" id="demo1"></p>
+           
+        </div>
           
         </div>
         <script src="index.js"></script>

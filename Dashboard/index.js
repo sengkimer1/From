@@ -1,5 +1,5 @@
 function fetchAPI4() {
-    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/4/answers');
+    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/1/answers');
     const params = {
         search_created_by: 'Group9'
     };
@@ -71,12 +71,8 @@ function fetchAPI6() {
 }
 fetchAPI6();
 function fetchAPIG9() {
-    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/3/answers');
-    const params = {
-        search_answer: 'Grade9',
-        search_created_by: 'Group9'
-    };
-    url.search = new URLSearchParams(params).toString();
+    let grades=document.getElementById("gradeLevel").value;
+    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/3/answers?search_created_by=Group9&search_answer='+ grades);
 
     fetch(url, {
         method: 'GET',
@@ -92,9 +88,8 @@ function fetchAPIG9() {
     })
     .then(data => {
         console.log(data);
-        const count = data.length; 
-
-        
+        const grade = data.length; 
+       document.getElementById("demo").innerHTML= grade;
     })
     .catch(error => {
         console.error('Error fetching or parsing data:', error);
@@ -104,12 +99,9 @@ function fetchAPIG9() {
 fetchAPIG9();
 
 function fetchAPIS1() {
-    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/4/answers');
-    const params = {
-        search_answer: 'FSD',
-        search_created_by: 'Group9'
-    };
-    url.search = new URLSearchParams(params).toString();
+    let school=document.getElementById("learningPlace").value;
+    const url = new URL('https://wmad-survey-backend.vercel.app/api/form-answers/question/4/answers?search_created_by=Group9&search_answer='+ school);
+   
 
     fetch(url, {
         method: 'GET',
@@ -125,7 +117,8 @@ function fetchAPIS1() {
     })
     .then(data => {
         console.log(data);
-        const count = data.length; 
+        const school = data.length; 
+        document.getElementById("demo1").innerHTML=school;
 
         
     })

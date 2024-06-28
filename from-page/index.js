@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             fullname.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             email.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             gradeLevel.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             learningPlace.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             interestLevel.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             previousExperience.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             experience.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             skill
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             activePedagogy.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text1.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             flexRadioDefault.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text2.value
           ],
-          created_by: "Group9-Kimer"
+           created_by: "Group9"
         },
         {
           email: email.value,
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             skill1
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             learningEnvironment.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             peerInteraction.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             feedbackSupport.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             skill2
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text3.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text4.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         {
           email: email.value,
@@ -353,12 +353,13 @@ document.addEventListener("DOMContentLoaded", function () {
           answer: [
             text5.value
           ],
-          created_by: "Group9-Kimer"
+          created_by: "Group9"
         },
         
       ]
     }
     saveFormAnswers(datas);
+   
   }
   function clearErrors() {
     let elements = document.querySelectorAll("input, textarea");
@@ -384,8 +385,16 @@ function saveFormAnswers(data) {
     },
     body: JSON.stringify(data)
   })
-    .then(response => response.json())
-    .then(data => console.log(data))
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Form submission successful:', data);
+    window.location.href = "../../finish-survey/index.html";
+  })
     .catch((error) => {
       console.error('Error:', error);
     });
