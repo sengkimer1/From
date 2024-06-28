@@ -8,7 +8,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
 .dashboard {
   width: 80%;
   background-color: #D6EFFD;
@@ -17,12 +16,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
-
 .dashboard h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .summary {
   display: flex;
   justify-content: space-around;
@@ -31,8 +28,7 @@ body {
 .summary p {
   font-size: 24px;
 }
-
-.box {
+.box,.box1 {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -40,30 +36,24 @@ body {
   width: 45%;
   text-align: center;
 }
-
-.box p {
+.box,.box1 p {
   margin: 10px 0;
 }
-
 .count {
   font-size: 24px;
   font-weight: bold;
 }
-
 .details {
   display: flex;
   justify-content: space-around;
 }
-
 .table-container {
   width: 45%;
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
 }
-
 caption {
   font-size: 18px;
   font-weight: bold;
@@ -76,7 +66,6 @@ td {
   text-align: center;
   font-size: 18px;
 }
-
 thead {
   background-color: #85bfe0;
 }
