@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let text3 = document.getElementById("text3");
     let text4 = document.getElementById("text4");
     let text5 = document.getElementById("text5");
-    let text6 = document.getElementById("text6");
+   
     if (!fullname.value) {
       hasError = true;
       fullname.style.border = "2px solid red";
@@ -138,11 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hasError = true;
       text5.style.border = "2px solid red";
     }
-    if (!text6.value) {
-      hasError = true;
-      text6.style.border = "2px solid red";
-    }
-
+  
     if (hasError) {
       return;
     }
@@ -167,9 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(text3.value);
     console.log(text4.value);
     console.log(text5.value);
-    console.log(text6.value);
 
-    const data = {
+    const datas = {
       answers: [
         {
           email: email.value,
@@ -203,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
           fullname: fullname.value,
           question_id: 4,
           answer: [
-            activePedagogy.value
+            learningPlace.value
           ],
           created_by: "Group9-Kimer"
         },
@@ -363,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
       ]
     }
-    saveFormAnswers(data);
+    saveFormAnswers(datas);
   }
   function clearErrors() {
     let elements = document.querySelectorAll("input, textarea");
